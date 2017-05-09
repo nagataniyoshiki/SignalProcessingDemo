@@ -26,5 +26,5 @@ Contents are licensed under [CC-BY-SA 3.0](http://creativecommons.org/licenses/b
 
 長谷 芳樹 （神戸市立工業高等専門学校）  
 Yoshiki NAGATANI, Kobe City College of Technology, Japan  
- https://ultrasonics.jp/nagatani/fdtd/  
+ https://ultrasonics.jp/nagatani/  
  https://twitter.com/nagataniyoshiki
