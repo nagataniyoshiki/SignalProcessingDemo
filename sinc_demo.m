@@ -5,6 +5,7 @@
 %    https://github.com/nagataniyoshiki
 % 
 %   rev. 20170509: First version
+%   rev. 20170509b: Show the repetition of frequency component
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 clear;
@@ -47,15 +48,19 @@ drawnow;
 
 % Plot spectrum of original signal
 FFT_Sig = fft(Sig)/Na;
+FFT_Sig_repeat = FFT_Sig;
+for i=2:UpsamplingRatio
+    FFT_Sig_repeat = [FFT_Sig_repeat FFT_Sig];
+end
 subplot(3,2,2);
-bar(fa,abs(FFT_Sig),0.01,'k');
+bar(fb,abs(FFT_Sig_repeat),0.01,'k');
 hold on;
-plot(fa,abs(FFT_Sig),'ko');
+plot(fb,abs(FFT_Sig_repeat),'ko');
 grid on;
-axis([0 Nb 0 max(abs(FFT_Sig))*1.2]);
+axis([0 Nb 0 max(abs(FFT_Sig_repeat))*1.2]);
 title('Amplitude Spectrum of the Original signal');
 ylabel('Amplitude Spectrum');
-xlabel('Frequency');
+xlabel('Frequency (wave number)');
 drawnow;
 
 % Plot original signal
@@ -110,4 +115,4 @@ grid on;
 axis([0 Nb 0 max(abs(FFT_UpsampledWave))*1.2]);
 title('Amplitude Spectrum of the Upsampled waveform');
 ylabel('Amplitude Spectrum');
-xlabel('Frequency');
+xlabel('Frequency (wave number)');
