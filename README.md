@@ -4,22 +4,22 @@
 ## 概要 / Outline
 
 神戸高専 電子工学科5年 電子応用（選択科目）の理解を助けるためのスクリプトを公開しています。活用して下さい。
-Matlab/Octave 対応（のはず）です。  
-You may find scripts for supporting students who learn Applied Electronic Engineering Class in Kobe City College of Technology. All scripts are compatible with Matlab and Octave platform.
+Matlab & Octave (.m) および Scilab (.sci) 対応（のはず）です。  
+You may find scripts for supporting students who learn Applied Electronic Engineering Class in Kobe City College of Technology. All scripts are compatible with Matlab/Octave (.m) and Scilab (.sci) platform.
 
-### sinc_demo.m: Sinc関数の畳み込みによるアップサンプリングのデモ
+### sinc_demo.m/.sci: Sinc関数の畳み込みによるアップサンプリングのデモ
 離散信号のアップサンプリング（Sinc補間）を，加算するSinc波を全て表示することで視覚的に理解します。  
 A demo program for visually understanding the sinc interpolation for upsampling a descrete signal by showing all sinc functions which will be summed up.
 
-### dft_demo.m: 離散フーリエ変換のデモ
+### dft_demo.m/.sci: 離散フーリエ変換のデモ
 離散フーリエ変換を，積分するcos波およびsin波を全て表示することで視覚的に理解します。  
 A demo program for visually understanding the Descrete Fourier Fransform showing all sinusoidal waves which will be integrated.
 
-### zeropadding_demo.m: ゼロ詰めをおこなった場合の離散フーリエ変換のデモ
+### zeropadding_demo.m/.sci: ゼロ詰めをおこなった場合の離散フーリエ変換のデモ
 ゼロ詰めをおこなった場合の離散フーリエ変換を波形をスペクトルを表示することで視覚的に理解します。  
 A demo program for visually understanding the Descrete Fourier Fransform with zero padding by showing the waveform and the spectrum.
 
-### window_demo.m: 離散フーリエ変換の窓関数のデモ
+### window_demo.m/.sci: 離散フーリエ変換の窓関数のデモ
 離散フーリエ変換の窓関数の影響を，波形とそのスペクトル，および窓関数のスペクトルを表示することで視覚的に理解します。  
 A demo program for visually understanding the effect of the window function for the Descrete Fourier Fransform by showing the waveform, its spectrum, and the spectrum of the window function.
 
