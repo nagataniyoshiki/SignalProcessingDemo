@@ -5,6 +5,7 @@
 %    https://github.com/nagataniyoshiki
 % 
 %   rev. 20170509: First version
+%   rev. 20170530: Use stem function
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 clear;
@@ -103,27 +104,21 @@ fig2 = figure;
 set(fig2,'Name','DFT Demo: DFT result','position',[820 300 500 700]);
 
 subplot(3,1,1);
-bar([0:Waves-1], real(DFT)',0.01,'k');
-hold on;
-plot([0:Waves-1], real(DFT)','rs');
+stem([0:Waves-1], real(DFT)','k');
 grid on;
 axis([-0.5 Waves-0.5 -max(abs(DFT)*1.1) max(abs(DFT)*1.1)]);
 title('DFT (Real part)');
 ylabel('Amplitude');
 
 subplot(3,1,2);
-bar([0:Waves-1], imag(DFT)',0.01,'b');
-hold on;
-plot([0:Waves-1], imag(DFT)','bs');
+stem([0:Waves-1], imag(DFT)','b');
 grid on;
 axis([-0.5 Waves-0.5 -max(abs(DFT)*1.1) max(abs(DFT)*1.1)]);
 title('DFT (Imaginary part)');
 ylabel('Amplitude');
 
 subplot(3,1,3);
-bar([0:Waves-1], abs(DFT)',0.01,'k');
-hold on;
-plot([0:Waves-1], abs(DFT)','ks');
+stem([0:Waves-1], abs(DFT)','k');
 grid on;
 axis([-0.5 Waves-0.5 0 max(abs(DFT)*1.1)]);
 title('DFT (Abs)');

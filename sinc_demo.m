@@ -6,6 +6,7 @@
 % 
 %   rev. 20170509: First version
 %   rev. 20170509b: Show the repetition of frequency component
+%   rev. 20170530: Use stem function
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 clear;
@@ -53,9 +54,7 @@ for i=2:UpsamplingRatio
     FFT_Sig_repeat = [FFT_Sig_repeat FFT_Sig];
 end
 subplot(3,2,2);
-bar(fb,abs(FFT_Sig_repeat),0.01,'k');
-hold on;
-plot(fb,abs(FFT_Sig_repeat),'ko');
+stem(fb,abs(FFT_Sig_repeat),'k');
 grid on;
 axis([0 Nb 0 max(abs(FFT_Sig_repeat))*1.2]);
 title('Amplitude Spectrum of the Original signal');
@@ -65,9 +64,8 @@ drawnow;
 
 % Plot original signal
 subplot(3,2,3);
-bar(ta,Sig',0.01,'k');
+stem(ta,Sig','k');
 hold on;
-plot(ta,Sig,'ko');
 grid on;
 axis([0 Na min(Sig)*1.2 max(Sig)*1.2]);
 title('Sinc functions for each point');
@@ -90,9 +88,8 @@ UpsampledWave = sum(sincwaves,2);
 
 % Plot original signal
 subplot(3,2,5);
-bar(ta,Sig',0.01,'k');
+stem(ta,Sig','k');
 hold on;
-plot(ta,Sig,'ko');
 grid on;
 axis([0 Na min(Sig)*1.2 max(Sig)*1.2]);
 title('Original signal and Upsampled waveform (summation of all sinc waveforms)');
@@ -108,9 +105,7 @@ drawnow;
 % Plot spectrum of upsampled waveform
 FFT_UpsampledWave = fft(UpsampledWave)/Nb;
 subplot(3,2,6);
-bar(fb,abs(FFT_UpsampledWave),0.01,'r');
-hold on;
-plot(fb,abs(FFT_UpsampledWave),'ro');
+stem(fb,abs(FFT_UpsampledWave),'r');
 grid on;
 axis([0 Nb 0 max(abs(FFT_UpsampledWave))*1.2]);
 title('Amplitude Spectrum of the Upsampled waveform');

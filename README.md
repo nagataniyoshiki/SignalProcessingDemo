@@ -13,15 +13,15 @@ A demo program for visually understanding the sinc interpolation for upsampling 
 
 ### dft_demo.m/.sci: 離散フーリエ変換のデモ
 離散フーリエ変換を，積分するcos波およびsin波を全て表示することで視覚的に理解します。  
-A demo program for visually understanding the Descrete Fourier Fransform showing all sinusoidal waves which will be integrated.
+A demo program for visually understanding the Descrete Fourier Transform showing all sinusoidal waves which will be integrated.
 
 ### zeropadding_demo.m/.sci: ゼロ詰めをおこなった場合の離散フーリエ変換のデモ
 ゼロ詰めをおこなった場合の離散フーリエ変換を波形をスペクトルを表示することで視覚的に理解します。  
-A demo program for visually understanding the Descrete Fourier Fransform with zero padding by showing the waveform and the spectrum.
+A demo program for visually understanding the Descrete Fourier Transform with zero padding by showing the waveform and the spectrum.
 
 ### window_demo.m/.sci: 離散フーリエ変換の窓関数のデモ
 離散フーリエ変換の窓関数の影響を，波形とそのスペクトル，および窓関数のスペクトルを表示することで視覚的に理解します。  
-A demo program for visually understanding the effect of the window function for the Descrete Fourier Fransform by showing the waveform, its spectrum, and the spectrum of the window function.
+A demo program for visually understanding the effect of the window function for the Descrete Fourier Transform by showing the waveform, its spectrum, and the spectrum of the window function.
 
 
 ## License
