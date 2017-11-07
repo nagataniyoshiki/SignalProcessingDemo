@@ -6,6 +6,7 @@
 // 
 //   rev. 20170509: First version
 //   rev. 20170517: Scilab version
+//   rev. 20171107: Set the background color to white
 ///////////////////////////////////////////////////////////////////////////
 
 clear;
@@ -42,7 +43,7 @@ fa = [0:Na-1]/(Na*dt);
 fb = [0:Nb-1]/(Nb*dt);
 
 // Prepare figure window
-fig1 = figure("Figure_name", "Zero Padding Demo", "position", [0 0 1800 900]);
+fig1 = figure("Figure_name", "Zero Padding Demo", "position", [0 0 1800 900], "BackgroundColor", [1 1 1]);
 timeaxis = [0, -1.1; max(tb*1000), 1.1];
 
 // Plot original signal (Rect)

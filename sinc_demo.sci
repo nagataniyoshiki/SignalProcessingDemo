@@ -7,6 +7,7 @@
 //   rev. 20170509: First version
 //   rev. 20170509b: Show the repetition of frequency component
 //   rev. 20170517: Scilab version
+//   rev. 20171107: Set the background color to white
 ///////////////////////////////////////////////////////////////////////////
 
 clear;
@@ -34,7 +35,7 @@ fa = [0:Na-1]*dta;
 fb = [0:Nb-1]*dta;
 
 // Prepare figure window
-fig1 = figure("Figure_name", "Sinc Interpolation Demo", "position", [0 0 1900 900]);
+fig1 = figure("Figure_name", "Sinc Interpolation Demo", "position", [0 0 1900 900], "BackgroundColor", [1 1 1]);
 
 // Plot original signal
 drawlater();

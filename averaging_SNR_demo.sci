@@ -5,6 +5,7 @@
 //    https://github.com/nagataniyoshiki
 // 
 //   rev. 20170725: First version
+//   rev. 20171107: Set the background color to white
 ///////////////////////////////////////////////////////////////////////////
 
 clear;
@@ -40,7 +41,7 @@ f = [0:N-1]*df;
 SNR_ratio = 10^(SNR_dB/20);
 
 // Prepare figure window
-fig1 = figure("Figure_name", "Averaging Demo on Improving SNR", "position", [0 0 1900 900]);
+fig1 = figure("Figure_name", "Averaging Demo on Improving SNR", "position", [0 0 1900 900], "BackgroundColor", [1 1 1]);
 timeaxis = [0, -amp*(1+1/SNR_ratio)*2.0; N/fs, amp*(1+1/SNR_ratio)*2.0];
 freqaxis = [0, -55; N*df/2, 5];
 

@@ -5,6 +5,7 @@
 //    https://github.com/nagataniyoshiki
 // 
 //   rev. 20170725: First version
+//   rev. 20171107: Set the background color to white
 ///////////////////////////////////////////////////////////////////////////
 
 clear;
@@ -38,7 +39,7 @@ df = 1/(N/fs);
 f = [0:N-1]*df;
 
 // Prepare figure window
-fig1 = figure("Figure_name", "Averaging Demo on Quantization Resolution", "position", [0 0 1900 900]);
+fig1 = figure("Figure_name", "Averaging Demo on Quantization Resolution", "position", [0 0 1900 900], "BackgroundColor", [1 1 1]);
 timeaxis = [0,-(amp+amp_noise); N/fs, (amp+amp_noise)];
 
 // Create original signal

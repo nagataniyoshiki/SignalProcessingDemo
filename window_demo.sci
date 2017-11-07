@@ -6,6 +6,7 @@
 // 
 //   rev. 20170512: First version
 //   rev. 20170517: Scilab version
+//   rev. 20171107: Set the background color to white
 ///////////////////////////////////////////////////////////////////////////
 
 clear;
@@ -61,7 +62,7 @@ f_Win = [-N/2*ZeroPaddingRatio:N/2*ZeroPaddingRatio-1]/(N*ZeroPaddingRatio*dt);
 f_Sig = [0:N*ZeroPaddingRatio-1]/(N*ZeroPaddingRatio*dt);
 
 // Prepare figure window
-fig1 = figure("Figure_name", "FFT Window Demo", "position", [0 0 1900 920]);
+fig1 = figure("Figure_name", "FFT Window Demo", "position", [0 0 1900 920], "BackgroundColor", [1 1 1]);
 
 timeaxis_SigWin  = [0, -abs(max(Sig)*1.1); N*1.5*dt*1000, abs(max(Sig)*1.1)];
 timeaxis_SigCont = [0, -abs(max(Sig)*1.1); (N*ZeroPaddingRatio-1)*dt*1000, abs(max(Sig)*1.1)];

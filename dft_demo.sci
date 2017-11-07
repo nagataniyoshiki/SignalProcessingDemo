@@ -6,6 +6,7 @@
 // 
 //   rev. 20170509: First version
 //   rev. 20170517: Scilab version
+//   rev. 20171107: Set the background color to white
 ///////////////////////////////////////////////////////////
 
 clear;
