@@ -31,7 +31,7 @@ ta = [0:Na-1]*dta;
 tb = [0:Nb-1]*dtb;
 
 // Prepare figure window
-fig1 = figure("Figure_name", "DFT Demo: Waveforms", "position", [0 0 800 940]);
+fig1 = figure("Figure_name", "DFT Demo: Waveforms", "position", [0 0 800 940], "BackgroundColor", [1 1 1]);
 
 // Plot original signal
 drawlater();
@@ -100,7 +100,7 @@ disp('DFT result (manually calculated)')
 disp(DFT)
 
 // Show DFT results
-fig2 = figure("Figure_name", "DFT Demo: DFT result", "position", [820 0 500 700]);
+fig2 = figure("Figure_name", "DFT Demo: DFT result", "position", [820 0 500 700], "BackgroundColor", [1 1 1]);
 
 drawlater();
 subplot(3,1,1);
