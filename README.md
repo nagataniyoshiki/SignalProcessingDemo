@@ -16,7 +16,7 @@ A demo program for visually and acoustically understanding the effect of the sam
 A demo program for visually understanding the sinc interpolation for upsampling a descrete signal by showing all sinc functions which will be summed up.
 
 ### 最もシンプルな FFT のデモ / Simplest FFT Demo [fft_simplest_demo.m/.sci]
-最もシンプルに Matlab/Octave/Scilab で FFT 解析をおこなうサンプルコードです。信号の生成方法や横軸（周波数軸）の計算方法などの基本を学んで下さい。
+最もシンプルに Matlab/Octave/Scilab で FFT 解析をおこなうサンプルコードです。信号の生成方法や横軸（周波数軸）の計算方法などの基本を学んで下さい。  
 The simplest sample code of the FFT analysis using Matlab/Octave/Scilab. Learn the basic techniques how to create the waveforms or how to calculate the frequency axis etc.
 
 ### 離散フーリエ変換（DFT）のデモ / DFT Demo [dft_demo.m/.sci]
