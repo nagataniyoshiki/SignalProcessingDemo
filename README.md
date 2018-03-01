@@ -1,11 +1,10 @@
-# 神戸高専 電子工学科 サポートスクリプト / Support Scripts for the Students in Kobe City College of Technology
+# ディジタル信号処理のデモプログラム (MATLAB/Octave/Scilab対応) / Demo Scripts of Digital Signal Processing (compatible with MATLAB/Octave/Scilab)
 
 
 ## 概要 / Outline
 
-神戸高専 電子工学科5年 電子応用（選択科目）の理解を助けるためのスクリプトを公開しています。活用して下さい。
-Matlab & Octave (.m) および Scilab (.sci) 対応（のはず）です。また， .m スクリプトには日本語版（ *_ja.m ）も用意しています。  
-You may find scripts for supporting students who learn Applied Electronic Engineering Class in Kobe City College of Technology. All scripts are compatible with Matlab/Octave (.m) and Scilab (.sci) platforms.
+ディジタル信号処理のデモプログラムです。MATLAB と Octave (.m) および Scilab (.sci) 対応です。神戸高専 電子工学科5年 電子応用（選択科目）の理解を助けるためのスクリプトを含みます。なお， .m スクリプトには日本語版（ *_ja.m ）も用意しています。  
+You may find scripts for understandig disital signal processing using MATLAB/Octave (.m) and Scilab (.sci) platforms. Scripts supporting students who learn Applied Electronic Engineering Class in Kobe City College of Technology are also included. 
 
 ### サンプリング定理のデモ / Sampling Theorem Demo [sampling_theorem_demo.m/.sci]
 連続信号のサンプリング時に重要なサンプリング定理を，周波数を少しずつ変えてその効果を表示および再生することで視覚的・聴覚的に理解します。  
