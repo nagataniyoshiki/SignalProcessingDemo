@@ -6,6 +6,7 @@
 % 
 %   rev. 20170509: First version
 %   rev. 20170530: Use stem function
+%   rev. 20180601: Remove horizontal axis from all figures except those at the bottom
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 clear;
@@ -93,6 +94,11 @@ for n=0:Waves-1
     
     drawnow;
 end;
+
+% Remove horizontal axis from all figures except those at the bottom
+Axes= findall(gcf,'type','axes');
+set(Axes(3:end),'xticklabel','');
+drawnow;
 
 % DFT coefficients = Real + i*Imaginary
 DFT = coefreal + 1i*coefimag;

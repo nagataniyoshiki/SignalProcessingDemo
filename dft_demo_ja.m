@@ -7,6 +7,7 @@
 %   rev. 20170509: First version
 %   rev. 20170530: Use stem function
 %   rev. 20171107: 日本語版
+%   rev. 20180601: 一番下のグラフ以外の横軸を削除
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 clear;
@@ -83,7 +84,7 @@ for n=0:Waves-1
     plot(tb,sinb,'b-');
     grid on;
     axis([0 Na -1 1]);
-    title(sprintf('-sin(2*pi*%d*n/%d) : フーリエ係数f = %.3fi',n,Na,coefimag(n+1)));
+    title(sprintf('-sin(2*pi*%d*n/%d) : フーリエ係数 = %.3fi',n,Na,coefimag(n+1)));
     % 軸のラベル
     if n == round((Waves-1)/2)
         ylabel('振幅');
@@ -94,6 +95,11 @@ for n=0:Waves-1
     
     drawnow;
 end;
+
+% 一番下のグラフ以外の横軸を削除
+Axes= findall(gcf,'type','axes');
+set(Axes(3:end),'xticklabel','');
+drawnow;
 
 % フーリエ係数 = 実部 + i*虚部
 DFT = coefreal + 1i*coefimag;
